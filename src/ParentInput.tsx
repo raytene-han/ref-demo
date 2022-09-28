@@ -5,11 +5,10 @@ function ParentInput() {
     const inputRef = createRef<HTMLInputElement>();
 
     function handleClick() {
-        if (inputRef) {
-            inputRef.current?.focus();
-        }
-        console.log(inputRef.current);
+        inputRef.current?.focus();
+        console.log("inputRef.current: ", inputRef.current);
     }
+    console.log("inputRef.current: ", inputRef.current);
     return (
         <div>
             <input name="createRef example" ref={inputRef}/>
